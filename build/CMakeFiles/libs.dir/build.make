@@ -76,74 +76,35 @@ include CMakeFiles/libs.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/libs.dir/flags.make
 
-CMakeFiles/libs.dir/libs/ultrasonico.c.obj: CMakeFiles/libs.dir/flags.make
-CMakeFiles/libs.dir/libs/ultrasonico.c.obj: ../libs/ultrasonico.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/libs.dir/libs/ultrasonico.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/libs/ultrasonico.c.obj -c /home/juan/pico/robot/libs/ultrasonico.c
+CMakeFiles/libs.dir/libs/lcd1602_i2c.c.obj: CMakeFiles/libs.dir/flags.make
+CMakeFiles/libs.dir/libs/lcd1602_i2c.c.obj: ../libs/lcd1602_i2c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/libs.dir/libs/lcd1602_i2c.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/libs/lcd1602_i2c.c.obj -c /home/juan/pico/robot/libs/lcd1602_i2c.c
 
-CMakeFiles/libs.dir/libs/ultrasonico.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libs.dir/libs/ultrasonico.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/juan/pico/robot/libs/ultrasonico.c > CMakeFiles/libs.dir/libs/ultrasonico.c.i
+CMakeFiles/libs.dir/libs/lcd1602_i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libs.dir/libs/lcd1602_i2c.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/juan/pico/robot/libs/lcd1602_i2c.c > CMakeFiles/libs.dir/libs/lcd1602_i2c.c.i
 
-CMakeFiles/libs.dir/libs/ultrasonico.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libs.dir/libs/ultrasonico.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/juan/pico/robot/libs/ultrasonico.c -o CMakeFiles/libs.dir/libs/ultrasonico.c.s
+CMakeFiles/libs.dir/libs/lcd1602_i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libs.dir/libs/lcd1602_i2c.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/juan/pico/robot/libs/lcd1602_i2c.c -o CMakeFiles/libs.dir/libs/lcd1602_i2c.c.s
 
-CMakeFiles/libs.dir/libs/l298.c.obj: CMakeFiles/libs.dir/flags.make
-CMakeFiles/libs.dir/libs/l298.c.obj: ../libs/l298.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/libs.dir/libs/l298.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/libs/l298.c.obj -c /home/juan/pico/robot/libs/l298.c
+CMakeFiles/libs.dir/libs/dht.c.obj: CMakeFiles/libs.dir/flags.make
+CMakeFiles/libs.dir/libs/dht.c.obj: ../libs/dht.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/libs.dir/libs/dht.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/libs/dht.c.obj -c /home/juan/pico/robot/libs/dht.c
 
-CMakeFiles/libs.dir/libs/l298.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libs.dir/libs/l298.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/juan/pico/robot/libs/l298.c > CMakeFiles/libs.dir/libs/l298.c.i
+CMakeFiles/libs.dir/libs/dht.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libs.dir/libs/dht.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/juan/pico/robot/libs/dht.c > CMakeFiles/libs.dir/libs/dht.c.i
 
-CMakeFiles/libs.dir/libs/l298.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libs.dir/libs/l298.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/juan/pico/robot/libs/l298.c -o CMakeFiles/libs.dir/libs/l298.c.s
-
-CMakeFiles/libs.dir/libs/bt.c.obj: CMakeFiles/libs.dir/flags.make
-CMakeFiles/libs.dir/libs/bt.c.obj: ../libs/bt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/libs.dir/libs/bt.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/libs/bt.c.obj -c /home/juan/pico/robot/libs/bt.c
-
-CMakeFiles/libs.dir/libs/bt.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libs.dir/libs/bt.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/juan/pico/robot/libs/bt.c > CMakeFiles/libs.dir/libs/bt.c.i
-
-CMakeFiles/libs.dir/libs/bt.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libs.dir/libs/bt.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/juan/pico/robot/libs/bt.c -o CMakeFiles/libs.dir/libs/bt.c.s
-
-CMakeFiles/libs.dir/libs/actuadores.c.obj: CMakeFiles/libs.dir/flags.make
-CMakeFiles/libs.dir/libs/actuadores.c.obj: ../libs/actuadores.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/libs.dir/libs/actuadores.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/libs/actuadores.c.obj -c /home/juan/pico/robot/libs/actuadores.c
-
-CMakeFiles/libs.dir/libs/actuadores.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libs.dir/libs/actuadores.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/juan/pico/robot/libs/actuadores.c > CMakeFiles/libs.dir/libs/actuadores.c.i
-
-CMakeFiles/libs.dir/libs/actuadores.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libs.dir/libs/actuadores.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/juan/pico/robot/libs/actuadores.c -o CMakeFiles/libs.dir/libs/actuadores.c.s
-
-CMakeFiles/libs.dir/libs/infrarrojo.c.obj: CMakeFiles/libs.dir/flags.make
-CMakeFiles/libs.dir/libs/infrarrojo.c.obj: ../libs/infrarrojo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/libs.dir/libs/infrarrojo.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/libs/infrarrojo.c.obj -c /home/juan/pico/robot/libs/infrarrojo.c
-
-CMakeFiles/libs.dir/libs/infrarrojo.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libs.dir/libs/infrarrojo.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/juan/pico/robot/libs/infrarrojo.c > CMakeFiles/libs.dir/libs/infrarrojo.c.i
-
-CMakeFiles/libs.dir/libs/infrarrojo.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libs.dir/libs/infrarrojo.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/juan/pico/robot/libs/infrarrojo.c -o CMakeFiles/libs.dir/libs/infrarrojo.c.s
+CMakeFiles/libs.dir/libs/dht.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libs.dir/libs/dht.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/juan/pico/robot/libs/dht.c -o CMakeFiles/libs.dir/libs/dht.c.s
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
@@ -156,7 +117,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
@@ -169,7 +130,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i: cmake_force
@@ -182,7 +143,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platfor
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i: cmake_force
@@ -195,7 +156,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
@@ -208,7 +169,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i: cmake_force
@@ -221,12 +182,12 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: /home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building ASM object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building ASM object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj   -c /home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.obj: /home/juan/pico/pico-sdk/src/common/pico_sync/sem.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.obj -c /home/juan/pico/pico-sdk/src/common/pico_sync/sem.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.i: cmake_force
@@ -239,7 +200,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.s: cmake_
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj: /home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj -c /home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.i: cmake_force
@@ -252,7 +213,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.s: 
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.obj: /home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.obj -c /home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.i: cmake_force
@@ -265,7 +226,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.s: cmak
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj: /home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj -c /home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.i: cmake_force
@@ -278,7 +239,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/critical_sectio
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_time/time.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_time/time.c.obj: /home/juan/pico/pico-sdk/src/common/pico_time/time.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_time/time.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_time/time.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_time/time.c.obj -c /home/juan/pico/pico-sdk/src/common/pico_time/time.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_time/time.c.i: cmake_force
@@ -291,7 +252,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_time/time.c.s: cmake
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj: /home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj -c /home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i: cmake_force
@@ -304,7 +265,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i: cmake_force
@@ -317,7 +278,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.obj: /home/juan/pico/pico-sdk/src/common/pico_util/datetime.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.obj -c /home/juan/pico/pico-sdk/src/common/pico_util/datetime.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.i: cmake_force
@@ -330,7 +291,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.s: c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.obj: /home/juan/pico/pico-sdk/src/common/pico_util/pheap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.obj -c /home/juan/pico/pico-sdk/src/common/pico_util/pheap.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.i: cmake_force
@@ -343,7 +304,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.s: cmak
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/queue.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/queue.c.obj: /home/juan/pico/pico-sdk/src/common/pico_util/queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/queue.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/queue.c.obj -c /home/juan/pico/pico-sdk/src/common/pico_util/queue.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/queue.c.i: cmake_force
@@ -356,7 +317,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/queue.c.s: cmak
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i: cmake_force
@@ -369,7 +330,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
@@ -382,7 +343,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clock
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
@@ -395,7 +356,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
@@ -408,7 +369,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
@@ -421,7 +382,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/wat
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
@@ -434,12 +395,12 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: /home/juan/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building ASM object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building ASM object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj   -c /home/juan/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
@@ -452,7 +413,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i: cmake_force
@@ -465,12 +426,12 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building ASM object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building ASM object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj   -c /home/juan/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
@@ -483,17 +444,17 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building ASM object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building ASM object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj   -c /home/juan/pico/pico-sdk/src/rp2_common/pico_divider/divider.S
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building ASM object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj   -c /home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i: cmake_force
@@ -506,7 +467,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_in
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i: cmake_force
@@ -519,22 +480,22 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_ma
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building ASM object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj   -c /home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building ASM object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj   -c /home/juan/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building ASM object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building ASM object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj   -c /home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i: cmake_force
@@ -547,7 +508,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i: cmake_force
@@ -560,12 +521,12 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building ASM object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building ASM object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj   -c /home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i: cmake_force
@@ -578,17 +539,17 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_mall
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building ASM object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj   -c /home/juan/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building ASM object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building ASM object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj   -c /home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
 	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj -c /home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i: cmake_force
@@ -601,7 +562,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/ne
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i: cmake_force
@@ -614,7 +575,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/bi
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
@@ -627,7 +588,7 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: CMakeFiles/libs.dir/flags.make
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
 
 CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i: cmake_force
@@ -638,26 +599,23 @@ CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
-CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: CMakeFiles/libs.dir/flags.make
-CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
+CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: CMakeFiles/libs.dir/flags.make
+CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj -c /home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
 
-CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c > CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c > CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 
-CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c -o CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 
 # Object files for target libs
 libs_OBJECTS = \
-"CMakeFiles/libs.dir/libs/ultrasonico.c.obj" \
-"CMakeFiles/libs.dir/libs/l298.c.obj" \
-"CMakeFiles/libs.dir/libs/bt.c.obj" \
-"CMakeFiles/libs.dir/libs/actuadores.c.obj" \
-"CMakeFiles/libs.dir/libs/infrarrojo.c.obj" \
+"CMakeFiles/libs.dir/libs/lcd1602_i2c.c.obj" \
+"CMakeFiles/libs.dir/libs/dht.c.obj" \
 "CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" \
 "CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" \
 "CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj" \
@@ -703,16 +661,13 @@ libs_OBJECTS = \
 "CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj" \
 "CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj" \
 "CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" \
-"CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
+"CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
 
 # External object files for target libs
 libs_EXTERNAL_OBJECTS =
 
-liblibs.a: CMakeFiles/libs.dir/libs/ultrasonico.c.obj
-liblibs.a: CMakeFiles/libs.dir/libs/l298.c.obj
-liblibs.a: CMakeFiles/libs.dir/libs/bt.c.obj
-liblibs.a: CMakeFiles/libs.dir/libs/actuadores.c.obj
-liblibs.a: CMakeFiles/libs.dir/libs/infrarrojo.c.obj
+liblibs.a: CMakeFiles/libs.dir/libs/lcd1602_i2c.c.obj
+liblibs.a: CMakeFiles/libs.dir/libs/dht.c.obj
 liblibs.a: CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 liblibs.a: CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 liblibs.a: CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -758,10 +713,10 @@ liblibs.a: CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stand
 liblibs.a: CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 liblibs.a: CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 liblibs.a: CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-liblibs.a: CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+liblibs.a: CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 liblibs.a: CMakeFiles/libs.dir/build.make
 liblibs.a: CMakeFiles/libs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Linking CXX static library liblibs.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/juan/pico/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Linking CXX static library liblibs.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/libs.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libs.dir/link.txt --verbose=$(VERBOSE)
 

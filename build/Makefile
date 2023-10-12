@@ -143,6 +143,19 @@ ELF2UF2Build/fast:
 .PHONY : ELF2UF2Build/fast
 
 #=============================================================================
+# Target rules for targets named estacion
+
+# Build rule for target.
+estacion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 estacion
+.PHONY : estacion
+
+# fast build rule for target.
+estacion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/build
+.PHONY : estacion/fast
+
+#=============================================================================
 # Target rules for targets named libs
 
 # Build rule for target.
@@ -154,19 +167,6 @@ libs: cmake_check_build_system
 libs/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/build
 .PHONY : libs/fast
-
-#=============================================================================
-# Target rules for targets named robot
-
-# Build rule for target.
-robot: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 robot
-.PHONY : robot
-
-# fast build rule for target.
-robot/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/build
-.PHONY : robot/fast
 
 #=============================================================================
 # Target rules for targets named bs2_default_padded_checksummed_asm
@@ -233,14 +233,41 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
+estacion.obj: estacion.c.obj
+
+.PHONY : estacion.obj
+
+# target to build an object file
+estacion.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/estacion.c.obj
+.PHONY : estacion.c.obj
+
+estacion.i: estacion.c.i
+
+.PHONY : estacion.i
+
+# target to preprocess a source file
+estacion.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/estacion.c.i
+.PHONY : estacion.c.i
+
+estacion.s: estacion.c.s
+
+.PHONY : estacion.s
+
+# target to generate assembly for a file
+estacion.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/estacion.c.s
+.PHONY : estacion.c.s
+
 home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.obj: home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.obj
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
 home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.i: home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -249,8 +276,8 @@ home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.i: home/juan/pico/
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 
 home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.s: home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -259,8 +286,8 @@ home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.s: home/juan/pico/
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 
 home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.obj: home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
@@ -269,8 +296,8 @@ home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.obj: home/juan/pico/pico-
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 
 home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.i: home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -279,8 +306,8 @@ home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.i: home/juan/pico/pico-sd
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 
 home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.s: home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -289,8 +316,8 @@ home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.s: home/juan/pico/pico-sd
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 
 home/juan/pico/pico-sdk/src/common/pico_sync/mutex.obj: home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
@@ -299,8 +326,8 @@ home/juan/pico/pico-sdk/src/common/pico_sync/mutex.obj: home/juan/pico/pico-sdk/
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 
 home/juan/pico/pico-sdk/src/common/pico_sync/mutex.i: home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -309,8 +336,8 @@ home/juan/pico/pico-sdk/src/common/pico_sync/mutex.i: home/juan/pico/pico-sdk/sr
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 
 home/juan/pico/pico-sdk/src/common/pico_sync/mutex.s: home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -319,8 +346,8 @@ home/juan/pico/pico-sdk/src/common/pico_sync/mutex.s: home/juan/pico/pico-sdk/sr
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 
 home/juan/pico/pico-sdk/src/common/pico_sync/sem.obj: home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.obj
@@ -329,8 +356,8 @@ home/juan/pico/pico-sdk/src/common/pico_sync/sem.obj: home/juan/pico/pico-sdk/sr
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 
 home/juan/pico/pico-sdk/src/common/pico_sync/sem.i: home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.i
@@ -339,8 +366,8 @@ home/juan/pico/pico-sdk/src/common/pico_sync/sem.i: home/juan/pico/pico-sdk/src/
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.i
 
 home/juan/pico/pico-sdk/src/common/pico_sync/sem.s: home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.s
@@ -349,8 +376,8 @@ home/juan/pico/pico-sdk/src/common/pico_sync/sem.s: home/juan/pico/pico-sdk/src/
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_sync/sem.c.s
 
 home/juan/pico/pico-sdk/src/common/pico_time/time.obj: home/juan/pico/pico-sdk/src/common/pico_time/time.c.obj
@@ -359,8 +386,8 @@ home/juan/pico/pico-sdk/src/common/pico_time/time.obj: home/juan/pico/pico-sdk/s
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/common/pico_time/time.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_time/time.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_time/time.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_time/time.c.obj
 
 home/juan/pico/pico-sdk/src/common/pico_time/time.i: home/juan/pico/pico-sdk/src/common/pico_time/time.c.i
@@ -369,8 +396,8 @@ home/juan/pico/pico-sdk/src/common/pico_time/time.i: home/juan/pico/pico-sdk/src
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/common/pico_time/time.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_time/time.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_time/time.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_time/time.c.i
 
 home/juan/pico/pico-sdk/src/common/pico_time/time.s: home/juan/pico/pico-sdk/src/common/pico_time/time.c.s
@@ -379,8 +406,8 @@ home/juan/pico/pico-sdk/src/common/pico_time/time.s: home/juan/pico/pico-sdk/src
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/common/pico_time/time.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_time/time.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_time/time.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_time/time.c.s
 
 home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
@@ -389,8 +416,8 @@ home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: home/juan/pico/
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
 home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.i: home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -399,8 +426,8 @@ home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.i: home/juan/pico/pi
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.s: home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -409,8 +436,8 @@ home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.s: home/juan/pico/pi
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 home/juan/pico/pico-sdk/src/common/pico_util/datetime.obj: home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.obj
@@ -419,8 +446,8 @@ home/juan/pico/pico-sdk/src/common/pico_util/datetime.obj: home/juan/pico/pico-s
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 
 home/juan/pico/pico-sdk/src/common/pico_util/datetime.i: home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.i
@@ -429,8 +456,8 @@ home/juan/pico/pico-sdk/src/common/pico_util/datetime.i: home/juan/pico/pico-sdk
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.i
 
 home/juan/pico/pico-sdk/src/common/pico_util/datetime.s: home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.s
@@ -439,8 +466,8 @@ home/juan/pico/pico-sdk/src/common/pico_util/datetime.s: home/juan/pico/pico-sdk
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.s
 
 home/juan/pico/pico-sdk/src/common/pico_util/pheap.obj: home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.obj
@@ -449,8 +476,8 @@ home/juan/pico/pico-sdk/src/common/pico_util/pheap.obj: home/juan/pico/pico-sdk/
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 
 home/juan/pico/pico-sdk/src/common/pico_util/pheap.i: home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.i
@@ -459,8 +486,8 @@ home/juan/pico/pico-sdk/src/common/pico_util/pheap.i: home/juan/pico/pico-sdk/sr
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.i
 
 home/juan/pico/pico-sdk/src/common/pico_util/pheap.s: home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.s
@@ -469,8 +496,8 @@ home/juan/pico/pico-sdk/src/common/pico_util/pheap.s: home/juan/pico/pico-sdk/sr
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.s
 
 home/juan/pico/pico-sdk/src/common/pico_util/queue.obj: home/juan/pico/pico-sdk/src/common/pico_util/queue.c.obj
@@ -479,8 +506,8 @@ home/juan/pico/pico-sdk/src/common/pico_util/queue.obj: home/juan/pico/pico-sdk/
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/common/pico_util/queue.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_util/queue.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/queue.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_util/queue.c.obj
 
 home/juan/pico/pico-sdk/src/common/pico_util/queue.i: home/juan/pico/pico-sdk/src/common/pico_util/queue.c.i
@@ -489,8 +516,8 @@ home/juan/pico/pico-sdk/src/common/pico_util/queue.i: home/juan/pico/pico-sdk/sr
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/common/pico_util/queue.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_util/queue.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/queue.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_util/queue.c.i
 
 home/juan/pico/pico-sdk/src/common/pico_util/queue.s: home/juan/pico/pico-sdk/src/common/pico_util/queue.c.s
@@ -499,8 +526,8 @@ home/juan/pico/pico-sdk/src/common/pico_util/queue.s: home/juan/pico/pico-sdk/sr
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/common/pico_util/queue.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/common/pico_util/queue.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/queue.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : home/juan/pico/pico-sdk/src/common/pico_util/queue.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.obj: home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
@@ -509,8 +536,7 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.obj: home/juan/pico/pico
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i: home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
@@ -519,8 +545,7 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.i: home/juan/pico/pico-s
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s: home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
@@ -529,8 +554,7 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.s: home/juan/pico/pico-s
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -539,8 +563,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/juan/pico/
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
@@ -549,8 +573,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/juan/pico/pi
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
@@ -559,8 +583,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/juan/pico/pi
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
@@ -569,8 +593,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/juan/pic
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -579,8 +603,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/juan/pico/
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -589,8 +613,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/juan/pico/
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/juan/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
@@ -599,8 +623,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/juan/p
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
@@ -609,8 +633,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/juan/pico/pi
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -619,8 +643,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/juan/pico/pico
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -629,9 +653,39 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/juan/pico/pico
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+
+home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+
+.PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj
+
+# target to build an object file
+home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+.PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+
+home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+
+.PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i
+
+# target to preprocess a source file
+home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+.PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+
+home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+
+.PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s
+
+# target to generate assembly for a file
+home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+.PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
@@ -639,8 +693,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/juan/pico/pico
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -649,8 +703,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/juan/pico/pico-s
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -659,8 +713,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/juan/pico/pico-s
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
@@ -669,8 +723,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: home/
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
@@ -679,8 +733,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/juan/pico/pico
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -689,8 +743,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/juan/pico/pico-s
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -699,8 +753,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/juan/pico/pico-s
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
@@ -709,8 +763,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/juan/pico/pi
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -719,8 +773,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/juan/pico/pico
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -729,8 +783,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/juan/pico/pico
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
@@ -739,8 +793,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/juan/pico/
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -749,8 +803,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/juan/pico/pi
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -759,8 +813,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/juan/pico/pi
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
@@ -769,8 +823,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/juan/pico/pi
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -779,8 +833,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/juan/pico/pico
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -789,8 +843,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/juan/pico/pico
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
@@ -799,8 +853,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/juan/pico/pi
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -809,8 +863,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/juan/pico/pico
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -819,8 +873,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/juan/pico/pico
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
@@ -829,8 +883,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home/juan
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -839,8 +893,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/juan/p
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -849,8 +903,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/juan/p
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
@@ -859,8 +913,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/juan/pico/pi
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -869,8 +923,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/juan/pico/pico
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -879,8 +933,8 @@ home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/juan/pico/pico
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -889,8 +943,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/juan
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
@@ -899,8 +953,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/juan/pico/
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -909,8 +963,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/juan/pico/pi
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -919,8 +973,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/juan/pico/pi
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
@@ -929,8 +983,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/juan/pico/
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -939,8 +993,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home/juan/p
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
@@ -949,8 +1003,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: home/jua
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
@@ -959,8 +1013,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: home/juan/
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
@@ -969,8 +1023,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: home/juan/
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
@@ -979,8 +1033,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/juan/pi
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -989,8 +1043,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: home/juan/pico
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -999,8 +1053,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: home/juan/pico
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -1009,8 +1063,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: home/
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
@@ -1019,8 +1073,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: home/juan/pic
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
@@ -1029,8 +1083,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: home/juan/
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
@@ -1039,8 +1093,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/juan/pi
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
@@ -1049,8 +1103,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/juan/pi
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
@@ -1059,8 +1113,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/juan/pico
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -1069,8 +1123,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: home/juan/pico/p
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -1079,8 +1133,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: home/juan/pico/p
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
@@ -1089,8 +1143,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: home/ju
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
@@ -1099,8 +1153,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: 
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
@@ -1109,8 +1163,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/juan/pi
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
@@ -1119,8 +1173,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/juan/pico
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
@@ -1129,8 +1183,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/juan/pico
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
@@ -1139,8 +1193,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home/juan
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -1149,8 +1203,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/juan/pic
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
@@ -1159,8 +1213,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: home/juan/pico/
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
@@ -1169,8 +1223,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: home/juan/pico/
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
@@ -1179,8 +1233,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/juan/pico/pi
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -1189,8 +1243,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: home/juan/pico/pico
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -1199,8 +1253,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: home/juan/pico/pico
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
@@ -1209,8 +1263,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/juan/pico/
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1219,8 +1273,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/juan/pico/pi
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1229,8 +1283,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/juan/pico/pi
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
@@ -1239,8 +1293,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: home/
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
@@ -1249,8 +1303,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: home/ju
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
@@ -1259,8 +1313,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: home/ju
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1269,8 +1323,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/juan/pi
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
@@ -1279,8 +1333,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: home/j
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
@@ -1289,8 +1343,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: home/jua
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
@@ -1299,8 +1353,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: home/jua
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
@@ -1309,8 +1363,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/juan/pico/pico
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -1319,8 +1373,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/juan/pico/pico-s
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -1329,8 +1383,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/juan/pico/pico-s
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
@@ -1339,8 +1393,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: home/juan
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
@@ -1349,8 +1403,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: home/juan/p
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
@@ -1359,8 +1413,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: home/juan/p
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1369,8 +1423,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/juan/pico/pi
 
 # target to build an object file
 home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1379,8 +1433,8 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/juan/pico/pico
 
 # target to preprocess a source file
 home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1389,171 +1443,63 @@ home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/juan/pico/pico
 
 # target to generate assembly for a file
 home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/estacion.dir/build.make CMakeFiles/estacion.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
-libs/actuadores.obj: libs/actuadores.c.obj
+libs/dht.obj: libs/dht.c.obj
 
-.PHONY : libs/actuadores.obj
-
-# target to build an object file
-libs/actuadores.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/libs/actuadores.c.obj
-.PHONY : libs/actuadores.c.obj
-
-libs/actuadores.i: libs/actuadores.c.i
-
-.PHONY : libs/actuadores.i
-
-# target to preprocess a source file
-libs/actuadores.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/libs/actuadores.c.i
-.PHONY : libs/actuadores.c.i
-
-libs/actuadores.s: libs/actuadores.c.s
-
-.PHONY : libs/actuadores.s
-
-# target to generate assembly for a file
-libs/actuadores.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/libs/actuadores.c.s
-.PHONY : libs/actuadores.c.s
-
-libs/bt.obj: libs/bt.c.obj
-
-.PHONY : libs/bt.obj
+.PHONY : libs/dht.obj
 
 # target to build an object file
-libs/bt.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/libs/bt.c.obj
-.PHONY : libs/bt.c.obj
+libs/dht.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/libs/dht.c.obj
+.PHONY : libs/dht.c.obj
 
-libs/bt.i: libs/bt.c.i
+libs/dht.i: libs/dht.c.i
 
-.PHONY : libs/bt.i
+.PHONY : libs/dht.i
 
 # target to preprocess a source file
-libs/bt.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/libs/bt.c.i
-.PHONY : libs/bt.c.i
+libs/dht.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/libs/dht.c.i
+.PHONY : libs/dht.c.i
 
-libs/bt.s: libs/bt.c.s
+libs/dht.s: libs/dht.c.s
 
-.PHONY : libs/bt.s
+.PHONY : libs/dht.s
 
 # target to generate assembly for a file
-libs/bt.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/libs/bt.c.s
-.PHONY : libs/bt.c.s
+libs/dht.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/libs/dht.c.s
+.PHONY : libs/dht.c.s
 
-libs/infrarrojo.obj: libs/infrarrojo.c.obj
+libs/lcd1602_i2c.obj: libs/lcd1602_i2c.c.obj
 
-.PHONY : libs/infrarrojo.obj
+.PHONY : libs/lcd1602_i2c.obj
 
 # target to build an object file
-libs/infrarrojo.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/libs/infrarrojo.c.obj
-.PHONY : libs/infrarrojo.c.obj
+libs/lcd1602_i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/libs/lcd1602_i2c.c.obj
+.PHONY : libs/lcd1602_i2c.c.obj
 
-libs/infrarrojo.i: libs/infrarrojo.c.i
+libs/lcd1602_i2c.i: libs/lcd1602_i2c.c.i
 
-.PHONY : libs/infrarrojo.i
-
-# target to preprocess a source file
-libs/infrarrojo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/libs/infrarrojo.c.i
-.PHONY : libs/infrarrojo.c.i
-
-libs/infrarrojo.s: libs/infrarrojo.c.s
-
-.PHONY : libs/infrarrojo.s
-
-# target to generate assembly for a file
-libs/infrarrojo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/libs/infrarrojo.c.s
-.PHONY : libs/infrarrojo.c.s
-
-libs/l298.obj: libs/l298.c.obj
-
-.PHONY : libs/l298.obj
-
-# target to build an object file
-libs/l298.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/libs/l298.c.obj
-.PHONY : libs/l298.c.obj
-
-libs/l298.i: libs/l298.c.i
-
-.PHONY : libs/l298.i
+.PHONY : libs/lcd1602_i2c.i
 
 # target to preprocess a source file
-libs/l298.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/libs/l298.c.i
-.PHONY : libs/l298.c.i
+libs/lcd1602_i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/libs/lcd1602_i2c.c.i
+.PHONY : libs/lcd1602_i2c.c.i
 
-libs/l298.s: libs/l298.c.s
+libs/lcd1602_i2c.s: libs/lcd1602_i2c.c.s
 
-.PHONY : libs/l298.s
-
-# target to generate assembly for a file
-libs/l298.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/libs/l298.c.s
-.PHONY : libs/l298.c.s
-
-libs/ultrasonico.obj: libs/ultrasonico.c.obj
-
-.PHONY : libs/ultrasonico.obj
-
-# target to build an object file
-libs/ultrasonico.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/libs/ultrasonico.c.obj
-.PHONY : libs/ultrasonico.c.obj
-
-libs/ultrasonico.i: libs/ultrasonico.c.i
-
-.PHONY : libs/ultrasonico.i
-
-# target to preprocess a source file
-libs/ultrasonico.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/libs/ultrasonico.c.i
-.PHONY : libs/ultrasonico.c.i
-
-libs/ultrasonico.s: libs/ultrasonico.c.s
-
-.PHONY : libs/ultrasonico.s
+.PHONY : libs/lcd1602_i2c.s
 
 # target to generate assembly for a file
-libs/ultrasonico.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/libs/ultrasonico.c.s
-.PHONY : libs/ultrasonico.c.s
-
-robot.obj: robot.c.obj
-
-.PHONY : robot.obj
-
-# target to build an object file
-robot.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/robot.c.obj
-.PHONY : robot.c.obj
-
-robot.i: robot.c.i
-
-.PHONY : robot.i
-
-# target to preprocess a source file
-robot.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/robot.c.i
-.PHONY : robot.c.i
-
-robot.s: robot.c.s
-
-.PHONY : robot.s
-
-# target to generate assembly for a file
-robot.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/robot.c.s
-.PHONY : robot.c.s
+libs/lcd1602_i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libs.dir/build.make CMakeFiles/libs.dir/libs/lcd1602_i2c.c.s
+.PHONY : libs/lcd1602_i2c.c.s
 
 # Help Target
 help:
@@ -1569,8 +1515,11 @@ help:
 	@echo "... bs2_default_padded_checksummed_asm"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... bs2_default"
+	@echo "... estacion"
 	@echo "... libs"
-	@echo "... robot"
+	@echo "... estacion.obj"
+	@echo "... estacion.i"
+	@echo "... estacion.s"
 	@echo "... home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.obj"
 	@echo "... home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.i"
 	@echo "... home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.s"
@@ -1611,6 +1560,9 @@ help:
 	@echo "... home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj"
 	@echo "... home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
 	@echo "... home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
+	@echo "... home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj"
+	@echo "... home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i"
+	@echo "... home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s"
 	@echo "... home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj"
 	@echo "... home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i"
 	@echo "... home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s"
@@ -1687,24 +1639,12 @@ help:
 	@echo "... home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj"
 	@echo "... home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
 	@echo "... home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
-	@echo "... libs/actuadores.obj"
-	@echo "... libs/actuadores.i"
-	@echo "... libs/actuadores.s"
-	@echo "... libs/bt.obj"
-	@echo "... libs/bt.i"
-	@echo "... libs/bt.s"
-	@echo "... libs/infrarrojo.obj"
-	@echo "... libs/infrarrojo.i"
-	@echo "... libs/infrarrojo.s"
-	@echo "... libs/l298.obj"
-	@echo "... libs/l298.i"
-	@echo "... libs/l298.s"
-	@echo "... libs/ultrasonico.obj"
-	@echo "... libs/ultrasonico.i"
-	@echo "... libs/ultrasonico.s"
-	@echo "... robot.obj"
-	@echo "... robot.i"
-	@echo "... robot.s"
+	@echo "... libs/dht.obj"
+	@echo "... libs/dht.i"
+	@echo "... libs/dht.s"
+	@echo "... libs/lcd1602_i2c.obj"
+	@echo "... libs/lcd1602_i2c.i"
+	@echo "... libs/lcd1602_i2c.s"
 .PHONY : help
 
 

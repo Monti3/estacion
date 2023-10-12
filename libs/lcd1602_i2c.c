@@ -1,4 +1,5 @@
 #include "lcd1602_i2c.h"
+#include <math.h>
 
 void i2c_write_byte(LCD* lcd_inst, uint8_t val) {
     i2c_write_blocking((lcd_inst->i2c_type == 1) ? i2c1 : i2c0,

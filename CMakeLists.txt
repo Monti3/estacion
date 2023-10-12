@@ -18,18 +18,16 @@ if (PICO_SDK_VERSION_STRING VERSION_LESS "1.4.0")
   message(FATAL_ERROR "Raspberry Pi Pico SDK version 1.4.0 (or later) required. Your version is ${PICO_SDK_VERSION_STRING}")
 endif()
 
-project(robot C CXX ASM)
+project(estacion C CXX ASM)
 
 # Initialise the Raspberry Pi Pico SDK
 pico_sdk_init()
 
 # Add libraries
 add_library(libs 
-    libs/ultrasonico.c
-    libs/l298.c
-    libs/bt.c
-    libs/actuadores.c
-    libs/infrarrojo.c
+    libs/lcd1602_i2c.c
+    libs/dht.c
+  
 )
 
 # Include header files to library
@@ -40,20 +38,19 @@ target_include_directories(libs PUBLIC
 # Link libraries with SDK
 target_link_libraries(libs 
   pico_stdlib
-  hardware_pwm
-  hardware_uart
-  hardware_adc
+  hardware_gpio
+  hardware_i2c
   )
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(robot robot.c )
+add_executable(estacion estacion.c )
 
-pico_set_program_name(robot "robot")
-pico_set_program_version(robot "0.1")
+pico_set_program_name(estacion "estacion")
+pico_set_program_version(estacion "0.1")
 
-pico_enable_stdio_uart(robot 1)
-pico_enable_stdio_usb(robot 0)
+pico_enable_stdio_uart(estacion 1)
+pico_enable_stdio_usb(estacion 0)
 
 
 
@@ -61,11 +58,11 @@ pico_enable_stdio_usb(robot 0)
 
 
 # Add the standard library to the build
-target_link_libraries(robot
+target_link_libraries(estacion
         pico_stdlib)
 
 # Add the standard include files to the build
-target_include_directories(robot PRIVATE
+target_include_directories(estacion PRIVATE
   ${CMAKE_CURRENT_LIST_DIR}
   ${CMAKE_CURRENT_LIST_DIR}/.. # for our common lwipopts or any other standard includes, if required
 )
@@ -74,10 +71,10 @@ target_include_directories(robot PRIVATE
 target_link_libraries(${PROJECT_NAME} 
     pico_stdlib
     libs
-    hardware_pwm
-    hardware_uart
+    hardware_i2c
+    hardware_gpio
     hardware_adc
 )
 
-pico_add_extra_outputs(robot)
+pico_add_extra_outputs(estacion)
 

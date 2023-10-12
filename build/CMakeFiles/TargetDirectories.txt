@@ -1,8 +1,8 @@
 /home/juan/pico/robot/build/CMakeFiles/rebuild_cache.dir
 /home/juan/pico/robot/build/CMakeFiles/ELF2UF2Build.dir
+/home/juan/pico/robot/build/CMakeFiles/estacion.dir
 /home/juan/pico/robot/build/CMakeFiles/edit_cache.dir
 /home/juan/pico/robot/build/CMakeFiles/libs.dir
-/home/juan/pico/robot/build/CMakeFiles/robot.dir
 /home/juan/pico/robot/build/pico-sdk/CMakeFiles/rebuild_cache.dir
 /home/juan/pico/robot/build/pico-sdk/CMakeFiles/edit_cache.dir
 /home/juan/pico/robot/build/pico-sdk/tools/CMakeFiles/rebuild_cache.dir

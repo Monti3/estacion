@@ -1,6 +1,8 @@
 #include "dht.h"
 
-void read_from_dht(dht_reading *result) {
+
+
+void read_from_dht(dht_reading *result, uint LED_PIN, uint DHT_PIN, uint MAX_TIMINGS) {
     int data[5] = {0, 0, 0, 0, 0};
     uint last = 1;
     uint j = 0;
@@ -44,6 +46,6 @@ void read_from_dht(dht_reading *result) {
                 result->temp_celsius = -result->temp_celsius;
             }
         } else {
-            printf("Bad data\n");
+    
         }
     }

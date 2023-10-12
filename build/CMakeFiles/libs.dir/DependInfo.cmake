@@ -51,7 +51,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
   "LIB_PICO_UTIL=1"
   "PICO_BOARD=\"pico\""
   "PICO_BUILD=1"
-  "PICO_CMAKE_BUILD_TYPE=\"Debug\""
+  "PICO_CMAKE_BUILD_TYPE=\"Release\""
   "PICO_COPY_TO_RAM=0"
   "PICO_CXX_ENABLE_EXCEPTIONS=0"
   "PICO_NO_FLASH=0"
@@ -101,8 +101,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/juan/pico/pico-sdk/src/rp2_common/pico_int64_ops/include"
   "/home/juan/pico/pico-sdk/src/rp2_common/pico_mem_ops/include"
   "/home/juan/pico/pico-sdk/src/rp2_common/boot_stage2/include"
-  "/home/juan/pico/pico-sdk/src/rp2_common/hardware_pwm/include"
-  "/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/include"
+  "/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/include"
   )
 set(CMAKE_DEPENDS_CHECK_C
   "/home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
@@ -114,10 +113,10 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/juan/pico/pico-sdk/src/common/pico_util/datetime.c" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/datetime.c.obj"
   "/home/juan/pico/pico-sdk/src/common/pico_util/pheap.c" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/pheap.c.obj"
   "/home/juan/pico/pico-sdk/src/common/pico_util/queue.c" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/common/pico_util/queue.c.obj"
-  "/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
   "/home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
   "/home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
   "/home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
+  "/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
   "/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
   "/home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
   "/home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
@@ -139,11 +138,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
   "/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
   "/home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
-  "/home/juan/pico/robot/libs/actuadores.c" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/libs/actuadores.c.obj"
-  "/home/juan/pico/robot/libs/bt.c" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/libs/bt.c.obj"
-  "/home/juan/pico/robot/libs/infrarrojo.c" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/libs/infrarrojo.c.obj"
-  "/home/juan/pico/robot/libs/l298.c" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/libs/l298.c.obj"
-  "/home/juan/pico/robot/libs/ultrasonico.c" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/libs/ultrasonico.c.obj"
+  "/home/juan/pico/robot/libs/dht.c" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/libs/dht.c.obj"
+  "/home/juan/pico/robot/libs/lcd1602_i2c.c" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/libs/lcd1602_i2c.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -178,7 +174,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
   "LIB_PICO_UTIL=1"
   "PICO_BOARD=\"pico\""
   "PICO_BUILD=1"
-  "PICO_CMAKE_BUILD_TYPE=\"Debug\""
+  "PICO_CMAKE_BUILD_TYPE=\"Release\""
   "PICO_COPY_TO_RAM=0"
   "PICO_CXX_ENABLE_EXCEPTIONS=0"
   "PICO_NO_FLASH=0"
@@ -228,8 +224,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/juan/pico/pico-sdk/src/rp2_common/pico_int64_ops/include"
   "/home/juan/pico/pico-sdk/src/rp2_common/pico_mem_ops/include"
   "/home/juan/pico/pico-sdk/src/rp2_common/boot_stage2/include"
-  "/home/juan/pico/pico-sdk/src/rp2_common/hardware_pwm/include"
-  "/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/include"
+  "/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "/home/juan/pico/robot/build/CMakeFiles/libs.dir/home/juan/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
@@ -267,7 +262,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "LIB_PICO_UTIL=1"
   "PICO_BOARD=\"pico\""
   "PICO_BUILD=1"
-  "PICO_CMAKE_BUILD_TYPE=\"Debug\""
+  "PICO_CMAKE_BUILD_TYPE=\"Release\""
   "PICO_COPY_TO_RAM=0"
   "PICO_CXX_ENABLE_EXCEPTIONS=0"
   "PICO_NO_FLASH=0"
@@ -317,8 +312,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/juan/pico/pico-sdk/src/rp2_common/pico_int64_ops/include"
   "/home/juan/pico/pico-sdk/src/rp2_common/pico_mem_ops/include"
   "/home/juan/pico/pico-sdk/src/rp2_common/boot_stage2/include"
-  "/home/juan/pico/pico-sdk/src/rp2_common/hardware_pwm/include"
-  "/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/include"
+  "/home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/include"
   )
 
 # Targets to which this target links.

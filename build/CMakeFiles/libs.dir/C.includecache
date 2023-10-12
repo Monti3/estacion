@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../libs/inc/dht.h
+pico/stdlib.h
+../libs/inc/pico/stdlib.h
+hardware/gpio.h
+../libs/inc/hardware/gpio.h
+
 /home/juan/pico/pico-sdk/src/boards/include/boards/pico.h
 
 /home/juan/pico/pico-sdk/src/common/pico_base/include/pico.h
@@ -44,13 +50,37 @@ stdbool.h
 stddef.h
 -
 
-/home/juan/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
+/home/juan/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h
+pico.h
+/home/juan/pico/pico-sdk/src/common/pico_stdlib/include/pico/pico.h
+pico/stdio.h
+/home/juan/pico/pico-sdk/src/common/pico_stdlib/include/pico/pico/stdio.h
+pico/time.h
+/home/juan/pico/pico-sdk/src/common/pico_stdlib/include/pico/pico/time.h
+hardware/gpio.h
+/home/juan/pico/pico-sdk/src/common/pico_stdlib/include/pico/hardware/gpio.h
+hardware/uart.h
+/home/juan/pico/pico-sdk/src/common/pico_stdlib/include/pico/hardware/uart.h
+pico/stdio_uart.h
+/home/juan/pico/pico-sdk/src/common/pico_stdlib/include/pico/pico/stdio_uart.h
+pico/stdio_usb.h
+/home/juan/pico/pico-sdk/src/common/pico_stdlib/include/pico/pico/stdio_usb.h
+pico/stdio_semihosting.h
+/home/juan/pico/pico-sdk/src/common/pico_stdlib/include/pico/pico/stdio_semihosting.h
 
-/home/juan/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/adc.h
+/home/juan/pico/pico-sdk/src/common/pico_time/include/pico/time.h
+pico.h
+/home/juan/pico/pico-sdk/src/common/pico_time/include/pico/pico.h
+hardware/timer.h
+/home/juan/pico/pico-sdk/src/common/pico_time/include/pico/hardware/timer.h
+
+/home/juan/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
 
 /home/juan/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
 hardware/platform_defs.h
 /home/juan/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/hardware/platform_defs.h
+
+/home/juan/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h
 
 /home/juan/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h
 
@@ -60,15 +90,11 @@ hardware/platform_defs.h
 
 /home/juan/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h
 
-/home/juan/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h
-
 /home/juan/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
 
-/home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/adc.h
-hardware/address_mapped.h
-/home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/address_mapped.h
-hardware/regs/adc.h
-/home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/adc.h
+/home/juan/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
+
+/home/juan/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h
 
 /home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h
 hardware/address_mapped.h
@@ -88,12 +114,6 @@ hardware/address_mapped.h
 hardware/regs/pads_bank0.h
 /home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/pads_bank0.h
 
-/home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h
-hardware/address_mapped.h
-/home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/address_mapped.h
-hardware/regs/resets.h
-/home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/resets.h
-
 /home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h
 hardware/address_mapped.h
 /home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/address_mapped.h
@@ -102,23 +122,19 @@ hardware/regs/sio.h
 hardware/structs/interp.h
 /home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/structs/interp.h
 
+/home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
+hardware/address_mapped.h
+/home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/address_mapped.h
+hardware/regs/timer.h
+/home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/timer.h
+
+/home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h
+hardware/address_mapped.h
+/home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/address_mapped.h
+hardware/regs/uart.h
+/home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/uart.h
+
 /home/juan/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
-
-/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
-pico.h
-/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/pico.h
-hardware/adc.h
-/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/hardware/adc.h
-hardware/resets.h
-/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/hardware/resets.h
-
-/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/include/hardware/adc.h
-pico.h
-/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/include/hardware/pico.h
-hardware/structs/adc.h
-/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/include/hardware/hardware/structs/adc.h
-hardware/gpio.h
-/home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/include/hardware/hardware/gpio.h
 
 /home/juan/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
 pico.h
@@ -148,11 +164,19 @@ hardware/regs/intctrl.h
 hardware/regs/m0plus.h
 /home/juan/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/hardware/regs/m0plus.h
 
-/home/juan/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h
+/home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h
 pico.h
-/home/juan/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/pico.h
-hardware/structs/resets.h
-/home/juan/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/hardware/structs/resets.h
+/home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/pico.h
+hardware/structs/timer.h
+/home/juan/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/hardware/structs/timer.h
+
+/home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h
+pico.h
+/home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/pico.h
+hardware/structs/uart.h
+/home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/hardware/structs/uart.h
+hardware/regs/dreq.h
+/home/juan/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/hardware/regs/dreq.h
 
 /home/juan/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
 hardware/platform_defs.h
@@ -165,6 +189,20 @@ sys/cdefs.h
 -
 pico/types.h
 /home/juan/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/pico/types.h
+
+/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h
+pico.h
+/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/pico.h
+
+/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
+pico/stdio.h
+/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/pico/stdio.h
+hardware/uart.h
+/home/juan/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/hardware/uart.h
+
+/home/juan/pico/robot/libs/dht.c
+dht.h
+/home/juan/pico/robot/libs/dht.h
 
 generated/pico_base/pico/config_autogen.h
 /home/juan/pico/pico-sdk/src/boards/include/boards/pico.h
