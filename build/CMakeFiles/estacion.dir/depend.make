@@ -198,6 +198,7 @@ CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/common/pico
 CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h
 CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/common/pico_time/include/pico/time.h
 CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
+CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/adc.h
 CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
 CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h
 CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h
@@ -208,6 +209,7 @@ CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/rp2040/hard
 CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
 CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
 CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h
+CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/adc.h
 CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h
 CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h
 CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h
@@ -216,6 +218,7 @@ CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/rp2040/hard
 CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
 CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h
 CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
+CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/hardware_adc/include/hardware/adc.h
 CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
 CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h
 CMakeFiles/estacion.dir/estacion.c.obj: /home/juan/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h
